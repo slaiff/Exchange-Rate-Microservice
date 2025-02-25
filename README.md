@@ -9,8 +9,8 @@ This micro-service reports back a currency's exchange rate in terms of United St
 - The ***calling*** program can expect the rate of USD to X Requested Currency to be populated on the second line (line[1]) of the file. 
 ## Requires
 - Use of text file communication. 
-## Requests to the Exchange-Rate-Microservice (ERM)
+## Requests to the Exchange-Rate-Microservice
   1. User should run the microservice, it will **wait** for a keyword on line 0 of the text file. This keyword should be written to file by the main/calling program.
-## Receiving data from the ERM
+## Receiving data from the Exchange-Rate-Microservice 
   3. The ***calling*** program should wait for a completion keyword (default = "done"), upon receival of this, it may extract the exchange rate from file for use.
 ## Example Call 
