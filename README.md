@@ -15,13 +15,8 @@ This micro-service reports back a currency's exchange rate in terms of United St
   3. The ***calling*** program should wait for a completion keyword (default = "done"), upon receival of this, it may extract the exchange rate from file for use.
 ## Example Call for ***Requesting*** (in Python)
 
-  def wakeMicroservice(currencyTicker):
-      fileName = "request.txt"  # The file monitored by the microservice
-      with open(fileName, "w") as f:
-          # Write the wake-up signal ("go") on the first line
-          f.write("go\n")
-          # Write the desired currency ticker on the second line
-          f.write(currencyTicker + "\n")
+  ![image](https://github.com/user-attachments/assets/14093f38-abe2-4542-8194-9cfde794ce11)
+
 
 ## Example call for ***Receiving*** data (in Python)
 
