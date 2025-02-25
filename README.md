@@ -18,8 +18,10 @@ This micro-service reports back a currency's exchange rate in terms of United St
 
   ![image](https://github.com/user-attachments/assets/14093f38-abe2-4542-8194-9cfde794ce11)
 
-
 ## Example call for ***Receiving*** data (in Python)
 
-    
+    ![image](https://github.com/user-attachments/assets/02e5f341-319b-4c69-b23a-f880f0abb574) 
+
+## UML Sequence Diagram
+
   
