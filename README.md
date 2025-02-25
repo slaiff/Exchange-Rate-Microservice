@@ -23,5 +23,7 @@ This micro-service reports back a currency's exchange rate in terms of United St
   ![image](https://github.com/user-attachments/assets/464677c0-468e-4da4-bfb9-70f775dfdf04)
 
 ## UML Sequence Diagram
+  ![image](https://github.com/user-attachments/assets/955e33d5-39a3-4ab3-b2da-a218ee9d25a4)
+
 
   
