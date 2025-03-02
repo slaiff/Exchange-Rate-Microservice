@@ -10,7 +10,7 @@ fileName = "middleMan.txt"
 def fetchRate(desiredRate):
     #attempt request to API and validate it was successful
     fetch = requests.get(apiKey) 
-    if fetch.status_code != 200: #200 indicates a successful get
+    if fetch.status_code != 200: #200 indicates successful get
         print(f"Request to API failed, status code {fetch.status_code}")
     else: #success
         #store the json data
@@ -22,11 +22,11 @@ def fetchRate(desiredRate):
             print(f"Current EURO to USD is : {currUSD} USD") #check 
             #See if user's desired rate exists within API
             if desiredRate in data["rates"]:
-                    #write to file - FIXME
+                    #write to file 
                     rate = data["rates"][desiredRate]
                     rate /= currUSD
                     rate = round(rate, 2)
-                    #print(f"1 USD is {rate} {desiredRate}")
+                    #print(f"1 USD is {rate} {desiredRate}") - test line to ensure USD is accurate
                     #Reopen the file, and write
                     outfile = open(fileName, "w")   #open file for writing
                     outfile.write("done\n")
@@ -67,5 +67,5 @@ def main():
     openFile()
  
 
-#call main / all other needs funcs
+#call main / all other needed funcs
 main()
